@@ -1,0 +1,8 @@
+{
+  "name": "expense_guard",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Rennud/expense_guard.git",
+  "author": "<rennud>",
+  "license": "MIT"
+}
