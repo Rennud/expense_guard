@@ -16,7 +16,7 @@ elif [ $CONFIRMATION == '2' ]; then
     # run flask app 
     cd ../../
     flask run --no-debugger
-
+    
 # exit     
 elif [ $CONFIRMATION == '3' ]; then 
     echo "Code more next time."
