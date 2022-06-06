@@ -16,8 +16,8 @@ jwt = JWTManager(app)
 
 CORS(app)
 
-# Create a route to authenticate your users and return JWTs. The
-# create_access_token() function is used to actually generate the JWT.
+# Create a route to authenticate your users and return JWTs. 
+# The create_access_token() function is used to actually generate the JWT.
 @app.route('/token', methods=['POST'])
 def create_token():
     email = request.json.get("email", None)
@@ -31,6 +31,7 @@ def create_token():
 @app.route("/profile", methods=["GET"])
 @jwt_required()
 def user_profile():
+    # I can get email from access_token
     email = get_jwt_identity()
     dictionary = {
         "message": "Welcome in your profile " + email
